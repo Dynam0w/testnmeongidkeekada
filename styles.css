@@ -1,4 +1,3 @@
-css
 :root {
   --green-accent: #37e37b;
   --bg-deep: #021012;
@@ -555,47 +554,6 @@ body {
   height: 26px;
 }
 
-/* FOOTER BUTTON GROUP */
-.footer-buttons {
-  display: flex;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* FOOTER FACEBOOK BUTTON */
-.footer-fb {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: linear-gradient(135deg, #1877F2, #1455b0);
-  color: white;
-  text-decoration: none;
-  padding: 0.7rem 1.6rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(24,119,242,0.4);
-}
-
-.footer-fb:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(24,119,242,0.6);
-}
-
-/* Make floating buttons stack nicely on mobile */
-@media (max-width: 768px) {
-  .fb-float {
-    bottom: 6.5rem;
-    right: 1.5rem;
-  }
-  .tg-float {
-    bottom: 2rem;
-    right: 1.5rem;
-  }
-}
-
 /* FLOATING TELEGRAM */
 .tg-float {
   position: fixed;
@@ -646,6 +604,36 @@ body {
   margin: 0;
 }
 
+/* FOOTER BUTTON GROUP */
+.footer-buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* FOOTER FACEBOOK BUTTON */
+.footer-fb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #1877F2, #1455b0);
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(24,119,242,0.4);
+}
+
+.footer-fb:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(24,119,242,0.6);
+}
+
+/* FOOTER TELEGRAM BUTTON */
 .footer-tg {
   display: inline-flex;
   align-items: center;
@@ -709,5 +697,16 @@ body {
 
   .section {
     padding: 3rem 1.5rem;
+  }
+
+  /* Align floating buttons nicely on mobile */
+  .fb-float {
+    bottom: 6.5rem;
+    right: 1.2rem;
+  }
+
+  .tg-float {
+    bottom: 2rem;
+    right: 1.2rem;
   }
 }
