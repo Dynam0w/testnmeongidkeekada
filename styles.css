@@ -526,6 +526,76 @@ body {
   max-width: 700px;
 }
 
+/* FLOATING FACEBOOK */
+.fb-float {
+  position: fixed;
+  bottom: 6.5rem;        /* sits above Telegram */
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1877F2, #1455b0);
+  color: white;
+  text-decoration: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(24,119,242,0.5);
+  transition: all 0.3s ease;
+}
+
+.fb-float:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 16px 40px rgba(24,119,242,0.7);
+}
+
+.fb-icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* FOOTER BUTTON GROUP */
+.footer-buttons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* FOOTER FACEBOOK BUTTON */
+.footer-fb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, #1877F2, #1455b0);
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(24,119,242,0.4);
+}
+
+.footer-fb:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(24,119,242,0.6);
+}
+
+/* Make floating buttons stack nicely on mobile */
+@media (max-width: 768px) {
+  .fb-float {
+    bottom: 6.5rem;
+    right: 1.5rem;
+  }
+  .tg-float {
+    bottom: 2rem;
+    right: 1.5rem;
+  }
+}
+
 /* FLOATING TELEGRAM */
 .tg-float {
   position: fixed;
